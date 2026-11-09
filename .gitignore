@@ -1,0 +1,26 @@
+# Environment and secrets
+.venv/
+.env
+.env.*
+
+# Personal footage and results: never commit
+*.mp4
+*.mov
+*.m4v
+*.MP4
+*.MOV
+*.M4V
+data/
+Data/
+outputs/
+
+# Model files (they live in ~/.cache/huggingface, but just in case)
+*.safetensors
+*.bin
+*.pt
+*.pth
+
+# Python and OS clutter
+__pycache__/
+*.pyc
+.DS_Store
