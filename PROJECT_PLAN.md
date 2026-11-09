@@ -30,8 +30,8 @@ Inspiration only. We are building our own version, not forking.
 
 ## Our repo
 
-- GitHub URL: PLACEHOLDER - not created yet
-- Planned to be open-sourced.
+- GitHub URL: https://github.com/CooperMcKay/local-sports-vision (private for now)
+- Planned to be open-sourced after review.
 - License: TBD (the reference repo is Apache-2.0; we have not chosen one).
 
 ## Decisions made so far
