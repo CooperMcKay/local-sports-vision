@@ -1,19 +1,11 @@
-# Local Sports Vision
+# Sports Vision
 
 A local-only tool that analyzes phone video of a training session and shows how
 form changes as fatigue builds. Nothing is uploaded: video, models and results
-all stay on the owner's own Mac.
+all stay on your device.
 
-> **Status: early development.** The pose-tracking pipeline has been proven on a
-> test clip. The MVP below is not built yet.
-
-## MVP: indoor cycling
-
-The first version targets a bike on an indoor trainer, filmed by a fixed phone.
-A fixed camera, steady light and repetitive pedaling make it the cleanest case,
-and every session can be compared with the last.
-
-Planned MVP measurements (design in progress):
+## MVP:
+Current demo is just person tracking, working on the bike trainer now. Hopefully with these key measurements: 
 
 - Cadence and how it drifts over a ride
 - Knee extension at the bottom of the pedal stroke (side view)
@@ -21,14 +13,13 @@ Planned MVP measurements (design in progress):
 - Torso angle over time
 - Early-session vs late-session comparison, and session-vs-session trends
 
-Injury-risk flags are "worth a look" signals only. They are not medical advice
-or a diagnosis.
+Injury-risk flags are "worth a look" signals only. 
 
 ## Long-term goal
 
 Use this for all of my Ironman training: bike and run first, and basketball as a
 side sport. Swimming is not planned. Comparisons are against my own history
-(a personal dataset built up session by session), not elite benchmarks.
+(a personal dataset built up session by session), which will make it highly interactive. 
 
 ## How it works
 
@@ -39,23 +30,6 @@ side sport. Swimming is not planned. Comparisons are against my own history
   tracked the person in 211 of 211 frames (visual check only, not yet validated
   against ground truth)
 
-## Privacy and security
-
-- Local only: no cloud API, no API keys
-- Models pinned to exact commits and loaded from `safetensors` files only
-- Personal videos, results and secrets are gitignored and never committed
-- Dependencies pinned in `requirements.txt`
-
-## Inspiration
-
-Inspired by [jeremyipark/vision-demos](https://github.com/jeremyipark/vision-demos)
-(Apache-2.0). This is an independent, local-first implementation.
-
-## Setup (current)
-
-Python 3.12 and ffmpeg are required. Create a virtual environment, then
-`pip install -r requirements.txt`. Models are downloaded once from Hugging Face
-at the pinned commits listed above. A full setup guide will follow with the MVP.
 
 ## License
 
