@@ -4,6 +4,14 @@ A local-only tool that analyzes phone video of a training session and shows how
 form changes as fatigue builds. Nothing is uploaded: video, models and results
 all stay on your device.
 
+## Demo
+
+<p align="center">
+  <img src="docs/demo.gif" width="300" alt="A 7-second jog with a pose skeleton and person box drawn over the runner, tracked by the local pipeline">
+</p>
+
+Person tracking on a short indoor jog clip, running entirely on a MacBook Pro M5.
+
 ## MVP:
 Current demo is just person tracking, working on the bike trainer now. Hopefully with these key measurements: 
 
