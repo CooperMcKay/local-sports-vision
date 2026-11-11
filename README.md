@@ -33,4 +33,4 @@ side sport. Swimming is not planned. Comparisons are against my own history
 
 ## License
 
-Not chosen yet. Do not assume any license until one is added.
+Licensed under the [Apache License 2.0](LICENSE).
